@@ -6,6 +6,7 @@ root_block_device {
     volume_size = 50 # Change this to 50
     volume_type = "gp3"
   }
+  user_data = file("docker.sh")
   tags = {
     Name = "terraform instance"
   }
